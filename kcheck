@@ -1,0 +1,25 @@
+#!/bin/sh                                                                                                                          
+
+
+gcc --version
+make --version
+                      ld -v
+                     fdformat --version
+                    depmod -V
+                    e2fsck -V
+                     fsck.jfs -V
+                     reiserfsck -V
+                     xfs_db -V
+                       mksquashfs -version
+                      btrfsck
+                       pccardctl -V
+                      quota -V
+                     pppd --version
+                   isdnctrl 2>&1|grep version
+                     showmount --version
+                     ps --version
+                       oprofiled --version
+                       udevd --version
+                      grub --version || grub-install --version
+                       mcelog --version
+                     iptables -V
