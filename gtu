@@ -2,7 +2,8 @@
 
 # |gco|: compile |@program@.cpp| [...] , 'outputting' to basename of first arg.                                                      
 
-# written by Hugh McGuire                                                                             # modified by Steve Bischoff                             
+# written by Hugh McGuire                                                                           
+# Modified by Steve Bischoff for C++ and added some runtime libraries                     
 
 if [ $# -lt 1 ]
 then
