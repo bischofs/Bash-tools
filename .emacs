@@ -18,47 +18,6 @@
 )
 
 
-;; repo location
-(defvar jorbi-git-path "~/Git/Emacs/")
-
-;; add lib folder from repo
-(defun jorbi-path(&optional p) 
-  (concat jorbi-git-path p)
-)
-;; add vendor lib
-(defun jorbi-vendor(&optional p) 
-  (concat jorbi-git-path (concat "Vendor/" p))
-)
-
-
-
-;; set up load path
-(add-to-list 'load-path (jorbi-vendor))
-;;(setq load-path (append load-path 
-;;'(
-(add-to-list 'load-path (jorbi-path))
-(add-to-list 'load-path (jorbi-vendor))
-(add-to-list 'load-path (jorbi-path "Mars/"))
-;; simpel gv
-(add-to-list 'load-path (jorbi-path "simplegv-mode/")) ;; SIMPLE GV
-;;
-(add-to-list 'load-path (jorbi-path "Jorbi/"))
-(add-to-list 'load-path (jorbi-vendor "Lua-Emacs/"))
-(add-to-list 'load-path (jorbi-vendor "slime/"))
-(add-to-list 'load-path (jorbi-vendor "Mathematica/"))
-(add-to-list 'load-path (jorbi-vendor "magit/"))
-(add-to-list 'load-path (jorbi-vendor "CSharp/"))
-(add-to-list 'load-path "~/Git/web-mode/")
-(add-to-list 'load-path (jorbi-vendor "color-theme/"))
-(add-to-list 'load-path (jorbi-vendor "jdee/lisp/"))
-(add-to-list 'load-path (jorbi-vendor "emacs-jabber/"))
-(add-to-list 'load-path (jorbi-vendor "header2/"))
-(add-to-list 'load-path "/usr/local/go/misc/emacs/")
-(add-to-list 'load-path (jorbi-vendor "auto-complete-install/"))
-;; )
-;; )
-;;)
-
 (require 'auto-complete-config)
 (add-to-list 'ac-dictionary-directories (jorbi-vendor "auto-complete-install/dict"))
 (ac-config-default)
